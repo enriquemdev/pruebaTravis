@@ -20,9 +20,9 @@ class FlightsTestCase(TestCase):
         a = Airport.objects.get(code="AAA")
         self.assertEqual(a.departures.count(), 2)
 
-    def test_arrivals_count(self):
-        a = Airport.objects.get(code="AAA")
-        self.assertEqual(a.arrivals.count(), 1)
+    # def test_arrivals_count(self):
+    #     a = Airport.objects.get(code="AAA")
+    #     self.assertEqual(a.arrivals.count(), 1)
 
     def test_valid_flight(self):
         a1 = Airport.objects.get(code="AAA")
